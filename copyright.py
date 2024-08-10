@@ -14,10 +14,11 @@ from pyrogram.enums import ChatMemberStatus, ChatType
 from apscheduler.schedulers.background import BackgroundScheduler
 
 
-API_ID = os.getenv("28518520")
-API_HASH = os.getenv("c858cde56cb2b2050a64df7e65de567b")
-BOT_TOKEN = os.getenv("7408170197:AAH7cu0Po4dtXKP4ZJfNUr4wgy56bAyN9JE")
-DEVS = [6681099028]
+API_ID = os.getenv("29305295")
+API_HASH = os.getenv("6838cc67172f18fe5f302c158ce2fbfa")
+app = Client("my_account", api_id=api_id, api_hash=api_hash)
+BOT_TOKEN = os.getenv("7244943550:AAH4yxH6hgt6D--ibBBB2bJGKz6245cAyGA")
+DEVS = [6872564125]
 
 ALL_GROUPS = []
 TOTAL_USERS = []
