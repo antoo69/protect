@@ -11,6 +11,7 @@ from pyrogram import filters, Client, idle
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.enums import ChatMemberStatus, ChatType
 
+import pytz
 from apscheduler.schedulers.background import BackgroundScheduler
 
 
@@ -182,7 +183,8 @@ def AutoDelete():
     MEDIA_GROUPS.remove(i)
     print("clean all medias ✓")
     print("waiting for 1 hour")
-
+ 
+timezone = pytz.timezone('UTC')
 scheduler = BackgroundScheduler()
 scheduler.add_job(AutoDelete, "interval", seconds=3600)
 
