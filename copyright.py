@@ -15,10 +15,10 @@ import pytz
 from apscheduler.schedulers.background import BackgroundScheduler
 
 
-API_ID = os.getenv("29305295")
-API_HASH = os.getenv("6838cc67172f18fe5f302c158ce2fbfa")
+API_ID = os.getenv("API_ID", "29305295")
+API_HASH = os.getenv("API_HASH", "6838cc67172f18fe5f302c158ce2fbfa")
 app = Client("my_account", api_id=api_id, api_hash=api_hash)
-BOT_TOKEN = os.getenv("7523708048:AAFaXw1JelkSc0MqDoxtp1K7UgqKdbxoYc0")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7523708048:AAFaXw1JelkSc0MqDoxtp1K7UgqKdbxoYc0")
 DEVS = [6872564125]
 
 ALL_GROUPS = []
